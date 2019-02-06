@@ -40,8 +40,8 @@ script:
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 before_deploy:
-  - mkdir -p ../dpl_cd_upload
-  - tar -zcf ../dpl_cd_upload/pseudoimage.tar.gz -C ./ .
+  - mkdir -p $TRAVIS_BUILD_DIR/../dpl_cd_upload
+  - tar -zcf $TRAVIS_BUILD_DIR/../dpl_cd_upload/pseudoimage.tar.gz -C $TRAVIS_BUILD_DIR/ $TRAVIS_BUILD_DIR
   - git config --local user.name "$TRAVIS_AUTHOR_NAME"
   - export COMMIT_AUTHOR=`git --no-pager show -s --format='%ae' \`git rev-parse\``
   - git config --local user.email "$TRAVIS_AUTHOR_EMAIL"
@@ -50,6 +50,7 @@ deploy:
   provider: releases
   api_key:
     secure: Uy47z8MDm6LAOClh3Ny7D9c2dD0yQb55eL8KacAt4u93z9iDdNVtryn7NUiLFHZEm61nx+0Miod5y/F893WZoZMYB6HWjpqNSE2qYA3tSDttEb8bgos6co9d8XrtO9HNn6FSlIv46YjOIo5foQA9z7TdoKt0O0xwwTRIr+w9UP3SzHypnuuhDN1S9Ci1+uKE25f0/AYBJrkTVJXGKVYN+qERaVU+0N51FR/4ij6sUCtswieQ2/a2LI1fSnRZDzOmz8DtbYRLkPjSCMvEQ056wQjnl40+O+zc0QgL7UdaGi6jmTrqkLvvKVjHV2ggG351aN3gWIsV0+YxxtlC7N5Aa58nn4MsDete5SZp+HfniCuP2bHF2Aqw1KB4UhvOpDpWA0OAvhDEEuPv2xAL86mZVm1gOF+KUw2ZWSrowjS5+5CGzUedYGq16sOcWyCkg9tOaH9fW63gXhJgWDX/7rG12TlmUzYgcDNC+hVC8ov5KdqAKfdkI4A4yni8maUVATH7TlDje99hDbMeMjleejAahiIEC350FOobwIap32o/yOjBdau0F0AKSz6wcUTuWmNM0Hmtfv6VU+4GAw+dyTc2SfA4sAHbl1god6zdxfm17DguHvTgDwbaeRrycjrtqFczekVSvNqIkvCWcnck24HKsnMtMunvS768sb2VcP0Fu54=
+  file_glob: true
   file: pseudoimage.tar.gz
   skip_cleanup: true
   on:
