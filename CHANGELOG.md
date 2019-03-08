@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/randytarampi/pseudoimage/compare/v2.12.5...v3.0.0) (2019-03-08)
+
+
+### Bug Fixes
+
+* **semantic-release:** Fix invalid `.releaserc` yaml. ([51126d8](https://github.com/randytarampi/pseudoimage/commit/51126d8))
+* **semantic-release:** Fix the `.releaserc` yaml. ([3b4ff1a](https://github.com/randytarampi/pseudoimage/commit/3b4ff1a))
+* **semantic-release:** Use `@semantic-release/git` properly ([1929ab1](https://github.com/randytarampi/pseudoimage/commit/1929ab1))
+
+
+### Performance Improvements
+
+* **package:** @mcph/lwip -> [@randy](https://github.com/randy).tarampi/lwip. ([1cdc517](https://github.com/randytarampi/pseudoimage/commit/1cdc517))
+
+
+### BREAKING CHANGES
+
+* **package:** Consumers of this package on platforms that aren't Windows will need to bring their own `libgif`, `libjpeg` and `libpng`.
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
