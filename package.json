@@ -78,7 +78,7 @@
     "node": ">=8"
   },
   "dependencies": {
-    "@mcph/lwip": "github:randytarampi/lwip#me-release-2018-10-29",
+    "@randy.tarampi/lwip": "^0.0.12",
     "commander": "^2.17.1",
     "mkdirp": "^0.5.1"
   },
