@@ -5,13 +5,16 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage) 
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage) 
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudoimage.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage) 
+[![Build status](https://img.shields.io/travis/com/randytarampi/pseudoimage.svg?style=flat-square)](https://travis-ci.com/randytarampi/pseudoimage) 
+[![Coverage status](https://img.shields.io/coveralls/randytarampi/pseudoimage.svg?style=flat-square)](https://coveralls.io/github/randytarampi/pseudoimage?branch=master) 
+[![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/pseudoimage.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/pseudoimage/maintainability)
 [![Waffle.io board](https://badge.waffle.io/randytarampi/randytarampi.github.io.svg?columns=all&style=flat-square)](https://waffle.io/randytarampi/randytarampi.github.io) 
 [![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudoimage?flat&useReferrer)](https://github.com/igrigorik/ga-beacon) 
 [![Greenkeeper badge](https://badges.greenkeeper.io/randytarampi/pseudoimage.svg)](https://greenkeeper.io/)
 
 [![Install @randy.tarampi/pseudoimage](https://nodeico.herokuapp.com/@randy.tarampi/pseudoimage.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 
-This uses [lwip](https://github.com/EyalAr/lwip) to modify your images to create a fake, which gets saved somewhere.
+This uses [lwip](https://github.com/kant2002/lwip) to modify your images to create a fake, which gets saved somewhere.
 
 ## Usage
 
@@ -39,7 +42,7 @@ files.map((file) => {
 
 function openImage(imagePath) {
 	return new Promise((resolve, reject) => {
-		lwip.open(imagePath, (error, image) => {
+		pseudoimage.open(imagePath, (error, image) => {
 			if (error) {
 				reject(error);
 				return;
