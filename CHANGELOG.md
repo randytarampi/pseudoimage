@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/randytarampi/pseudoimage/compare/v3.0.0...v3.0.1) (2019-03-10)
+
+
+### Bug Fixes
+
+* **build:** Fix installation on Windows boxes with node@6. ([#9](https://github.com/randytarampi/pseudoimage/issues/9)) ([68a4e93](https://github.com/randytarampi/pseudoimage/commit/68a4e93))
+
 # [3.0.0](https://github.com/randytarampi/pseudoimage/compare/v2.12.5...v3.0.0) (2019-03-08)
 
 
