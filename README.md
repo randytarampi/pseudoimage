@@ -8,7 +8,7 @@
 [![Build status](https://img.shields.io/travis/com/randytarampi/pseudoimage.svg?style=flat-square)](https://travis-ci.com/randytarampi/pseudoimage) 
 [![Coverage status](https://img.shields.io/coveralls/randytarampi/pseudoimage.svg?style=flat-square)](https://coveralls.io/github/randytarampi/pseudoimage?branch=master) 
 [![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/pseudoimage.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/pseudoimage/maintainability)
-[![Waffle.io board](https://badge.waffle.io/randytarampi/randytarampi.github.io.svg?columns=all&style=flat-square)](https://waffle.io/randytarampi/randytarampi.github.io) 
+[![Waffle.io board](https://badge.waffle.io/randytarampi/pseudolocalize.svg?columns=all&style=flat-square)](https://waffle.io/randytarampi/pseudolocalize) 
 [![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudoimage?flat&useReferrer)](https://github.com/igrigorik/ga-beacon) 
 [![Greenkeeper badge](https://badges.greenkeeper.io/randytarampi/pseudoimage.svg)](https://greenkeeper.io/)
 
