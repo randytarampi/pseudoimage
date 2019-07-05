@@ -1,3 +1,13 @@
+## [3.0.2](https://github.com/randytarampi/pseudoimage/compare/v3.0.1...v3.0.2) (2019-07-05)
+
+
+### Bug Fixes
+
+* .snyk, package.json & package-lock.json to reduce vulnerabilities ([ae72334](https://github.com/randytarampi/pseudoimage/commit/ae72334))
+* .snyk, package.json & package-lock.json to reduce vulnerabilities ([173b719](https://github.com/randytarampi/pseudoimage/commit/173b719))
+* Apply Synk patch for SNYK-JS-LODASH-450202. ([527cc47](https://github.com/randytarampi/pseudoimage/commit/527cc47))
+* Apply Synk patch for SNYK-JS-LODASH-450202. ([64174a9](https://github.com/randytarampi/pseudoimage/commit/64174a9))
+
 ## [3.0.1](https://github.com/randytarampi/pseudoimage/compare/v3.0.0...v3.0.1) (2019-03-10)
 
 
