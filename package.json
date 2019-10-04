@@ -83,7 +83,7 @@
     "@randy.tarampi/lwip": "^0.0.19",
     "commander": "^2.20.0",
     "mkdirp": "^0.5.1",
-    "snyk": "^1.192.2"
+    "snyk": "^1.230.5"
   },
   "greenkeeper": {
     "commitMessages": {
