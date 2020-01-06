@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/randytarampi/pseudoimage/compare/v3.0.2...v3.1.0) (2020-01-06)
+
+
+### Features
+
+* **package:** Blindly upgrade our dependencies for the new year and support node@10, node@12 and beyond. ([27f3fe5](https://github.com/randytarampi/pseudoimage/commit/27f3fe5214a8c525642b0a587c89cc860bd87964))
+
 ## [3.0.2](https://github.com/randytarampi/pseudoimage/compare/v3.0.1...v3.0.2) (2019-07-05)
 
 
