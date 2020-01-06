@@ -10,13 +10,13 @@ commander
     .usage("[options] <sourceDirectory> [destinationDirectory]")
     .description("ʕつ◕ᴥ◕ʔつ 📷 → Your application's pseudolocales' image folders")
     .option("-p --preset <preset>", "Use a preset pseudolocalizer {retina|half}", /^(retina|half)$/gm)
-    .action((sourceDirectory, destinationDirectory) => {
+    .action((commander, [sourceDirectory, destinationDirectory] = []) => {
         if (!commander.args.length) {
             console.error("Please supply a sourceDirectory"); // eslint-disable-line no-console
             process.exit(1);
         }
 
-        if (commander.args.length < 3) {
+        if (!destinationDirectory) {
             destinationDirectory = path.join(path.sep, `${sourceDirectory.split(path.sep).filter(component => !!component).join(path.sep)}-pseudoimages`);
         }
 

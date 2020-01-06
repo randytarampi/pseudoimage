@@ -3,18 +3,26 @@ const fs = require("fs");
 const rm = require("./rm");
 
 const rmrf = dir => {
-    let files = fs.readdirSync(dir);
+    try {
+        let files = fs.readdirSync(dir);
 
-    files.forEach(function (file) {
-        let filename = path.join(dir, file);
+        files.forEach(function (file) {
+            let filename = path.join(dir, file);
 
-        if (fs.statSync(filename).isDirectory()) {
-            rmrf(filename);
-        } else {
-            rm(filename);
+            if (fs.statSync(filename).isDirectory()) {
+                rmrf(filename);
+            } else {
+                rm(filename);
+            }
+        });
+        fs.rmdirSync(dir);
+    } catch (error) {
+        if (error.code === "ENOENT") {
+            return;
         }
-    });
-    fs.rmdirSync(dir);
+
+        throw error;
+    }
 };
 
 module.exports = rmrf;

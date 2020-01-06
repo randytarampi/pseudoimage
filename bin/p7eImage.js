@@ -12,13 +12,13 @@ commander
     .usage("[options] <sourceImagePath> [destinationImagePath]")
     .description("ʕつ◕ᴥ◕ʔつ 📷 → pseudoimages")
     .option("-p --preset <preset>", "Use a preset pseudolocalizer {retina|half}", /^(retina|half)$/gm)
-    .action((sourceImagePath, destinationImagePath) => {
+    .action((commander, [sourceImagePath, destinationImagePath] = []) => {
         if (!commander.args.length) {
             console.error("Please supply a sourceImagePath"); // eslint-disable-line no-console
             process.exit(1);
         }
 
-        if (commander.args.length < 3) {
+        if (!destinationImagePath) {
             destinationImagePath = path.join(path.dirname(sourceImagePath), `${path.basename(sourceImagePath, path.extname(sourceImagePath))}.pseudoimage${path.extname(sourceImagePath)}`);
         }
 

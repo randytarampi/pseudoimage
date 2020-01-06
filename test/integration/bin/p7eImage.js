@@ -87,7 +87,7 @@ describe("p7eImage", function () {
         });
     });
 
-    it("accepts a`destinationPath`", function () {
+    it("accepts a `destinationPath`", function () {
         const sourceFile = path.join(__dirname, "../../resources/photo-1450685810341-e56f8424bbcc.jpeg");
         const destinationFile = path.join(__dirname, "../../resources/photo-1450685810341-e56f8424bbcc.pseudoimage.manual.jpeg");
         const stubArguments = [

@@ -67,7 +67,7 @@ describe("p7eImages", function () {
         });
     });
 
-    it("accepts a`destinationPath`", function () {
+    it("accepts a `destinationPath`", function () {
         const sourceDirectory = path.join(__dirname, "../../resources/subdirectory");
         const destinationDirectory = `${sourceDirectory}-pseudoimages-manual`;
         const stubArguments = [
