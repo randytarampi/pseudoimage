@@ -18,7 +18,7 @@ addons:
   apt:
     packages:
       - libgif-dev
-      - libpng16-dev
+      - libpng-dev
 env:
   global:
     - CPUS_COUNT=4
