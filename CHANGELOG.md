@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/randytarampi/pseudoimage/compare/v3.1.0...v3.1.1) (2020-02-16)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([d98d92f](https://github.com/randytarampi/pseudoimage/commit/d98d92fc49a4b0a3edc914a1baf6ec482a9deae6))
+
 # [3.1.0](https://github.com/randytarampi/pseudoimage/compare/v3.0.2...v3.1.0) (2020-01-06)
 
 
