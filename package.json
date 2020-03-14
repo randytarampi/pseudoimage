@@ -81,7 +81,7 @@
   },
   "dependencies": {
     "@randy.tarampi/lwip": "^1.1.0",
-    "commander": "^4.1.0",
+    "commander": "^5.0.0",
     "mkdirp": "^0.5.1",
     "snyk": "^1.290.1"
   },
