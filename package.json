@@ -74,14 +74,14 @@
     "mocha": "^7.0.0",
     "nyc": "^15.0.0",
     "semantic-release": "^17.0.0",
-    "sinon": "^8.0.4"
+    "sinon": "^9.0.2"
   },
   "engines": {
     "node": ">=8"
   },
   "dependencies": {
     "@randy.tarampi/lwip": "^1.1.0",
-    "commander": "^4.1.0",
+    "commander": "^5.0.0",
     "mkdirp": "^1.0.4",
     "snyk": "^1.290.1"
   },
