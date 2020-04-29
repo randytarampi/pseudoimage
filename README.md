@@ -9,7 +9,7 @@
 [![Coverage status](https://img.shields.io/coveralls/randytarampi/pseudoimage.svg?style=flat-square)](https://coveralls.io/github/randytarampi/pseudoimage?branch=master)
 [![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/pseudoimage.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/pseudoimage/maintainability)
 [![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudoimage?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
-[![Greenkeeper badge](https://badges.greenkeeper.io/randytarampi/pseudoimage.svg)](https://greenkeeper.io/)
+
 
 [![Install @randy.tarampi/pseudoimage](https://nodeico.herokuapp.com/@randy.tarampi/pseudoimage.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 
