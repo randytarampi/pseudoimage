@@ -1,3 +1,19 @@
+## [3.1.2](https://github.com/randytarampi/pseudoimage/compare/v3.1.1...v3.1.2) (2020-04-29)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([ccb9861](https://github.com/randytarampi/pseudoimage/commit/ccb98619e0d981788870e62ae86fe16392a3d91b))
+* package.json & package-lock.json to reduce vulnerabilities ([720ec5d](https://github.com/randytarampi/pseudoimage/commit/720ec5d7125884bbb54e394a7ab47b23ba7a3282))
+* upgrade coveralls from 3.0.9 to 3.1.0 ([0df417c](https://github.com/randytarampi/pseudoimage/commit/0df417cc3dc19e029787755dc9aef7f0bed87ffc))
+* upgrade coveralls from 3.0.9 to 3.1.0 ([e0f62f4](https://github.com/randytarampi/pseudoimage/commit/e0f62f415bab3ff24a4f360d25bda31ae9bfd123))
+* upgrade eslint-plugin-import from 2.19.1 to 2.20.2 ([92bfcae](https://github.com/randytarampi/pseudoimage/commit/92bfcaeb062b40f15e01ce72c01a3fa979235a15))
+* upgrade eslint-plugin-import from 2.19.1 to 2.20.2 ([4fb5e26](https://github.com/randytarampi/pseudoimage/commit/4fb5e26c7196460aa18f82586913e41660037f6e))
+* upgrade semantic-release from 17.0.0 to 17.0.7 ([75d718b](https://github.com/randytarampi/pseudoimage/commit/75d718b1b538b2a6d2035d07a659d3159d8423be))
+* upgrade semantic-release from 17.0.0 to 17.0.7 ([f7f8cbb](https://github.com/randytarampi/pseudoimage/commit/f7f8cbba176a694eb1287faeaa2863f482319dee))
+* upgrade snyk from 1.290.1 to 1.311.0 ([e04d0e4](https://github.com/randytarampi/pseudoimage/commit/e04d0e45ceee466e698cce7f2bacc7304bbece69))
+* upgrade snyk from 1.290.1 to 1.311.0 ([ccffbf8](https://github.com/randytarampi/pseudoimage/commit/ccffbf89f6071dbb676cb4af6d779b312b080704))
+
 ## [3.1.1](https://github.com/randytarampi/pseudoimage/compare/v3.1.0...v3.1.1) (2020-02-16)
 
 
