@@ -1,3 +1,22 @@
+## [3.1.3](https://github.com/randytarampi/pseudoimage/compare/v3.1.2...v3.1.3) (2020-04-30)
+
+
+### Bug Fixes
+
+* package.json, package-lock.json & .snyk to reduce vulnerabilities ([9966aed](https://github.com/randytarampi/pseudoimage/commit/9966aed617369fda5662b81e2944f636172cb044))
+* package.json, package-lock.json & .snyk to reduce vulnerabilities ([1eaa1f5](https://github.com/randytarampi/pseudoimage/commit/1eaa1f5035e9443a5acb2fb9c765df8991614142))
+* package.json, package-lock.json & .snyk to reduce vulnerabilities ([2ba06c6](https://github.com/randytarampi/pseudoimage/commit/2ba06c6bd97e96d74efd1ffa63eb53b7b6e5d530))
+* upgrade @semantic-release/changelog from 5.0.0 to 5.0.1 ([0f808fe](https://github.com/randytarampi/pseudoimage/commit/0f808fee6fe8d11b44b6d4f730eb813204c5129f))
+* upgrade @semantic-release/changelog from 5.0.0 to 5.0.1 ([7386193](https://github.com/randytarampi/pseudoimage/commit/73861931b5f6c74d4d514cf2b6f991313a81eddc))
+* upgrade commander from 5.0.0 to 5.1.0 ([d73908a](https://github.com/randytarampi/pseudoimage/commit/d73908a8fe294d4506a507b8f51a97689d7c8b9e))
+* upgrade commander from 5.0.0 to 5.1.0 ([ae017c7](https://github.com/randytarampi/pseudoimage/commit/ae017c7290fb05cf2c4f6a8c2fc8b03732ea3224))
+* upgrade mocha from 7.1.1 to 7.1.2 ([4961370](https://github.com/randytarampi/pseudoimage/commit/4961370c57e4b86ab2b27198dfecb5e72a103e5b))
+* upgrade mocha from 7.1.1 to 7.1.2 ([1a868c8](https://github.com/randytarampi/pseudoimage/commit/1a868c80f70c4c3c403a087660dbd0c651b3350b))
+* upgrade nyc from 15.0.0 to 15.0.1 ([179c35c](https://github.com/randytarampi/pseudoimage/commit/179c35ce3d6c2326a276b4a2ad83166dc024488f))
+* upgrade nyc from 15.0.0 to 15.0.1 ([b9ffb85](https://github.com/randytarampi/pseudoimage/commit/b9ffb851ee419b5aba4f5862aa9c51da330382ff))
+* upgrade snyk from 1.311.0 to 1.313.1 ([cd87a1c](https://github.com/randytarampi/pseudoimage/commit/cd87a1cb6e35f348f0dbbab1d4f29a5110645bf9))
+* upgrade snyk from 1.311.0 to 1.313.1 ([60f5498](https://github.com/randytarampi/pseudoimage/commit/60f5498e7eaef4d3a36cf7c5b1a3679e677b6831))
+
 ## [3.1.2](https://github.com/randytarampi/pseudoimage/compare/v3.1.1...v3.1.2) (2020-04-29)
 
 
