@@ -1,3 +1,13 @@
+## [3.1.4](https://github.com/randytarampi/pseudoimage/compare/v3.1.3...v3.1.4) (2020-05-01)
+
+
+### Bug Fixes
+
+* upgrade [@randy](https://github.com/randy).tarampi/lwip from 1.1.0 to 1.3.1 ([fa62762](https://github.com/randytarampi/pseudoimage/commit/fa62762b1f378ae9a20433d50e3dd265a2beefe5))
+* upgrade [@randy](https://github.com/randy).tarampi/lwip from 1.1.0 to 1.3.1 ([e7ca6c8](https://github.com/randytarampi/pseudoimage/commit/e7ca6c83340692c7d884abaef4499aa0f0b5fdbf))
+* upgrade mocha from 7.1.1 to 7.1.2 ([20ad4e4](https://github.com/randytarampi/pseudoimage/commit/20ad4e4b4162748b875ebe0dba154797d540dd0e))
+* upgrade mocha from 7.1.1 to 7.1.2 ([bc54be5](https://github.com/randytarampi/pseudoimage/commit/bc54be5bca5c5226c06ad0c82b2eda2fc6becea9))
+
 ## [3.1.3](https://github.com/randytarampi/pseudoimage/compare/v3.1.2...v3.1.3) (2020-04-30)
 
 
