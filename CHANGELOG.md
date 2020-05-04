@@ -1,3 +1,11 @@
+## [3.1.5](https://github.com/randytarampi/pseudoimage/compare/v3.1.4...v3.1.5) (2020-05-04)
+
+
+### Bug Fixes
+
+* upgrade snyk from 1.316.1 to 1.316.2 ([c2c0377](https://github.com/randytarampi/pseudoimage/commit/c2c0377fc238571bccb7a1763a29e24cb6d27f06))
+* upgrade snyk from 1.316.1 to 1.316.2 ([f57703b](https://github.com/randytarampi/pseudoimage/commit/f57703bee4e595d97388016077f2bb8957d922bb))
+
 ## [3.1.4](https://github.com/randytarampi/pseudoimage/compare/v3.1.3...v3.1.4) (2020-05-01)
 
 
