@@ -1,66 +1,19 @@
 {
   "name": "@randy.tarampi/pseudoimage",
-  "publishConfig": {
-    "access": "public"
-  },
+  "description": "ʕつ◕ᴥ◕ʔつ 📷 → Your application's pseudolocales' image folders",
+  "version": "3.1.4",
   "author": {
     "name": "Randy Tarampi",
     "email": "rt@randytarampi.ca",
     "url": "https://www.randytarampi.ca"
   },
-  "version": "3.1.4",
-  "description": "ʕつ◕ᴥ◕ʔつ 📷 → Your application's pseudolocales' image folders",
-  "main": "lib/pseudoimage.js",
-  "directories": {
-    "lib": "./src/lib",
-    "bin": "./bin",
-    "test": "./test"
+  "bugs": "https://github.com/randytarampi/pseudoimage/issues",
+  "dependencies": {
+    "@randy.tarampi/lwip": "^1.3.1",
+    "commander": "^5.1.0",
+    "mkdirp": "^1.0.4",
+    "snyk": "^1.316.2"
   },
-  "files": [
-    "bin",
-    "lib",
-    "npm-shrinkwrap.json"
-  ],
-  "sideEffects": false,
-  "scripts": {
-    "pretest": "gulp -LLLL --color lint",
-    "test": "NODE_ENV=test gulp -LLLL --color test",
-    "cover": "rm -rf coverage/ .nyc_output/; NODE_ENV=test nyc gulp -LLLL --color test",
-    "coveralls": "cat coverage/lcov.info | coveralls",
-    "prepublishOnly": "npm shrinkwrap",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
-  },
-  "bugs": {
-    "url": "https://github.com/randytarampi/pseudoimage/issues",
-    "email": "bugs@randytarampi.ca"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/randytarampi/pseudoimage.git"
-  },
-  "license": "MIT",
-  "keywords": [
-    "bear",
-    "woof",
-    "纬",
-    "横糸",
-    "씨",
-    "subtegmine",
-    "гав",
-    "υφάδι",
-    "نسيج",
-    "پود",
-    "বুনন",
-    "ʕ•ᴥ•ʔ",
-    "pseudoimage",
-    "pseudolocalization",
-    "localization",
-    "internationalization",
-    "p16n",
-    "l10n",
-    "i18n"
-  ],
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
@@ -76,14 +29,55 @@
     "semantic-release": "^17.0.7",
     "sinon": "^9.0.2"
   },
+  "directories": {
+    "lib": "./src/lib",
+    "bin": "./bin",
+    "test": "./test"
+  },
   "engines": {
     "node": ">=8"
   },
-  "dependencies": {
-    "@randy.tarampi/lwip": "^1.3.1",
-    "commander": "^5.1.0",
-    "mkdirp": "^1.0.4",
-    "snyk": "^1.316.1"
+  "files": [
+    "bin",
+    "lib",
+    "npm-shrinkwrap.json"
+  ],
+  "keywords": [
+    "bear",
+    "i18n",
+    "internationalization",
+    "l10n",
+    "localization",
+    "p16n",
+    "pseudoimage",
+    "pseudolocalization",
+    "subtegmine",
+    "woof",
+    "ʕ•ᴥ•ʔ",
+    "υφάδι",
+    "гав",
+    "نسيج",
+    "پود",
+    "বুনন",
+    "横糸",
+    "纬",
+    "씨"
+  ],
+  "license": "MIT",
+  "main": "lib/pseudoimage.js",
+  "publishConfig": {
+    "access": "public"
   },
+  "repository": "randytarampi/pseudoimage.git",
+  "scripts": {
+    "cover": "rm -rf coverage/ .nyc_output/; NODE_ENV=test nyc gulp -LLLL --color test",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "prepare": "npm run snyk-protect",
+    "prepublishOnly": "npm shrinkwrap",
+    "pretest": "gulp -LLLL --color lint",
+    "snyk-protect": "snyk protect",
+    "test": "NODE_ENV=test gulp -LLLL --color test"
+  },
+  "sideEffects": false,
   "snyk": true
 }
