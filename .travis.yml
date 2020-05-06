@@ -31,8 +31,6 @@ before_install:
   - export TRAVIS_REPO_NAME=${TRAVIS_REPO_SLUG#*/}
   - uname -a
   - lscpu
-  - npm install -g npm
-  - npm install -g semantic-release
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt autoremove; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get remove libjpeg-turbo8-dev libjpeg9-dev+; fi
 before_script:
