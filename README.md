@@ -6,6 +6,7 @@
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudoimage.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![Build status](https://img.shields.io/travis/com/randytarampi/pseudoimage.svg?style=flat-square)](https://travis-ci.com/randytarampi/pseudoimage)
+[![Build status](https://ci.appveyor.com/api/projects/status/9torglvwe5nnn2of/branch/master?svg=true&style=flat-square)](https://ci.appveyor.com/project/randytarampi/lwip/branch/master)
 [![Coverage status](https://img.shields.io/coveralls/randytarampi/pseudoimage.svg?style=flat-square)](https://coveralls.io/github/randytarampi/pseudoimage?branch=master)
 [![Maintainability status](https://img.shields.io/codeclimate/maintainability-percentage/randytarampi/pseudoimage.svg?style=flat-square)](https://codeclimate.com/github/randytarampi/pseudoimage/maintainability)
 [![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudoimage?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
