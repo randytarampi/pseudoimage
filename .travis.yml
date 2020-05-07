@@ -1,5 +1,8 @@
 language: node_js
-os: linux
+os:
+  - linux
+  - osx
+  - windows
 dist: bionic
 matrix:
   fast_finish: true
@@ -27,11 +30,6 @@ env:
   - secure: p25mJtGFm/2cXY5wSpDUmXvDmbJVN8QoDTJ0iVcb0N0MvvEoFD1kAR4rb8pKreT8wHgKZbnQO+H3kg0k8p8cmZwMlGtXvuhqz3bdWAkRcBVdbVkVE8qSuDgrWZbIJYK3yT20eWpjmFm6whnYKpE/oyoOww8bSrIk/GTf8koqCMyDIOM2QvMDh/uaTEH4WezhxVcIGbUPwx3jB42m9GwoUpWrtmgcnCr5MKeNUynMpnFhofBzX9Hkiq3AhWaMqAfTyGyX4mktgrF3hjQia7HaV2aAZ8qT5OMPuNIbUEWJNqlq6sa6pupZ1oRFWAGiCudMc7ai/iW+v0UDp3UIDzM95rqfxU/v1OYSxgepIJQwF6cnmQbjpR/MFkmF3va/o63XtYd+98e419NNY72Ne9FxaCrxAnax0wYvpVLnuD9weNx4N++Y6JOwW1TFDU6eZ13/JdgMc9CTuGSXD8qge2aMpi2m6kD3/LZNquiraaxd8x2GqqvaoyrE9A6bskTZIbknc2enZ+r8F2VVB82Y1M5677HGvsbiGUx3RLNTEc+N30fpV+LJGYXWy9+Kr5UN4pRy0/PWQCZCb3dLxg0rXYxCGcqz6o5Xjk/zJahLfd0ZX87EtmgqtAlv7H/8lAf7ZM9BJPaKoyWriFL0OE6oNFQsvEMNJaYGCrJQzmHG1wOib/U=
   - secure: bb0earfOYSsSKVKgCqtS79hV9obizuBT/cTmSP8nneMVP6PwYT+U0x4juieYCusbKtKkSNUTKlkPIEmapjWQKrBZTMf3arIkLH65dntPN8yM25cjZDbFiuYIysLYixWVvxLF1yNLHUtAmwDumWjCE5i8TfQsHS+LE0nQfRYHOkg7xLVhY7BI3urWbLykp/BbOcwNE09ph2jgvYvROKby8tLRyYryjZmIb6uti9qBP0wiiHZDYulZxKWxTh+a5TvsOyVVO7NXaOz9HzI+cYMlLEIxZAJ8Bqu44cCufA21P+utLren8PzOEu+8vL/0SpP5898W4ss9w1H/OLFsJPrdRTduQrSw9HRJPKnUFFP9UKNp2NPrXk8crgKWjydnX0DJ8go8cELePidKGdi8xD3LDzfB6Gxj+Vm1N7JVaIwh2y1bqZ+RStfIPrNEjAYXvDwG/CYdAh36P4UiqAFvz/mQPt6YxCFqZF3wfC5bdvvf15j/YeLEshqE7u6klcsaAjd/ZlEAf5jIHFTllNlaZK2V4EL6yk0f1pN0KChxRaejyvPPM2uM166jAWzu/CLNsmzxGnOsfS4a/QNdItfeiOYnhu+ISRIC1apVSKGVPzDrXBAMnBM3tq9LZGMTQ18w2ss4NWyVR/OP+nw2/P2hXIyTj9bvLn1/yS+9y0PEi5LuPtQ=
 cache: npm
-before_install:
-- export TRAVIS_REPO_OWNER=${TRAVIS_REPO_SLUG%/*}
-- export TRAVIS_REPO_NAME=${TRAVIS_REPO_SLUG#*/}
-- uname -a
-- lscpu
 before_script:
 - npm run pretest
 - |-
@@ -46,9 +44,9 @@ after_script:
     npm run coveralls;
     ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT;
     CODECLIMATE_API_HOST=https://codebeat.co/webhooks/code_coverage CODECLIMATE_REPO_TOKEN=0ffbe667-c1e3-4a92-ad81-a0b592801a6b npx codeclimate-test-reporter < coverage/lcov.info
-    curl -s https://report.ci/upload.py | python;
+    curl -s https://report.ci/upload.py | python - --include='*test-results.xml' --framework=junit;
     bash <(curl -s https://codecov.io/bash);
-    bash <(curl -Ls https://coverage.codacy.com/get.sh);
+    bash <(curl -Ls https://coverage.codacy.com/get.sh) -r coverage/lcov.info;
   fi;
 before_deploy:
 - git config --local user.name "$TRAVIS_AUTHOR_NAME"
