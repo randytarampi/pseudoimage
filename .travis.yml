@@ -9,6 +9,7 @@ matrix:
   allow_failures:
   - node_js: node
   - node_js: lts/*
+  - os: windows
 node_js:
 - 8
 - 10
