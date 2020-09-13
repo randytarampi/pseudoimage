@@ -1,3 +1,10 @@
+## [3.1.7](https://github.com/randytarampi/pseudoimage/compare/v3.1.6...v3.1.7) (2020-09-13)
+
+
+### Bug Fixes
+
+* upgrade snyk from 1.386.0 to 1.387.1 ([fd83ffb](https://github.com/randytarampi/pseudoimage/commit/fd83ffb2d53f218f5d97e771e4884a97c467a714))
+
 ## [3.1.6](https://github.com/randytarampi/pseudoimage/compare/v3.1.5...v3.1.6) (2020-08-29)
 
 
