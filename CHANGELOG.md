@@ -1,3 +1,10 @@
+## [3.1.10](https://github.com/randytarampi/pseudoimage/compare/v3.1.9...v3.1.10) (2020-09-22)
+
+
+### Bug Fixes
+
+* upgrade semantic-release from 17.1.1 to 17.1.2 ([1399ad1](https://github.com/randytarampi/pseudoimage/commit/1399ad1253f275aad41d072d52f8d740e02dd8b8))
+
 ## [3.1.9](https://github.com/randytarampi/pseudoimage/compare/v3.1.8...v3.1.9) (2020-09-18)
 
 
