@@ -1,3 +1,11 @@
+## [3.1.12](https://github.com/randytarampi/pseudoimage/compare/v3.1.11...v3.1.12) (2020-09-29)
+
+
+### Bug Fixes
+
+* upgrade eslint-plugin-import from 2.22.0 to 2.22.1 ([7c2452a](https://github.com/randytarampi/pseudoimage/commit/7c2452a471d3fdf1b07262edd97116218a755125))
+* upgrade snyk from 1.399.1 to 1.400.0 ([1da4d48](https://github.com/randytarampi/pseudoimage/commit/1da4d481e672bbcf39226d00144efdc36e15cc93))
+
 ## [3.1.11](https://github.com/randytarampi/pseudoimage/compare/v3.1.10...v3.1.11) (2020-09-23)
 
 
