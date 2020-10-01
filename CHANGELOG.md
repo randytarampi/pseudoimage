@@ -1,3 +1,11 @@
+## [3.1.13](https://github.com/randytarampi/pseudoimage/compare/v3.1.12...v3.1.13) (2020-10-01)
+
+
+### Bug Fixes
+
+* upgrade sinon from 9.0.3 to 9.1.0 ([fd4e2fd](https://github.com/randytarampi/pseudoimage/commit/fd4e2fd6f4788f9f742b668966d8b73254232d9f))
+* upgrade snyk from 1.400.0 to 1.402.0 ([a9a47d9](https://github.com/randytarampi/pseudoimage/commit/a9a47d90caa7c59b7f2ff1cea08303dfe5ad5918))
+
 ## [3.1.12](https://github.com/randytarampi/pseudoimage/compare/v3.1.11...v3.1.12) (2020-09-29)
 
 
