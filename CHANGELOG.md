@@ -1,3 +1,13 @@
+## [3.1.15](https://github.com/randytarampi/pseudoimage/compare/v3.1.14...v3.1.15) (2020-10-18)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([a2fe951](https://github.com/randytarampi/pseudoimage/commit/a2fe95104aee229f4d36f0e0bb40025980c1edd9))
+* upgrade semantic-release from 17.1.2 to 17.2.0 ([672b0d0](https://github.com/randytarampi/pseudoimage/commit/672b0d02b9d8f6f4fc70e768b3982394436bb495))
+* upgrade sinon from 9.1.0 to 9.2.0 ([d3367d9](https://github.com/randytarampi/pseudoimage/commit/d3367d9fa9d33297cdb5afac9f1496930ae39cf4))
+* upgrade snyk from 1.405.1 to 1.406.0 ([1fe406b](https://github.com/randytarampi/pseudoimage/commit/1fe406b64b75d7ca819f1d47716af1bf1c543e5e))
+
 ## [3.1.14](https://github.com/randytarampi/pseudoimage/compare/v3.1.13...v3.1.14) (2020-10-03)
 
 
