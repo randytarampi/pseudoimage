@@ -1,3 +1,11 @@
+## [3.1.16](https://github.com/randytarampi/pseudoimage/compare/v3.1.15...v3.1.16) (2020-10-19)
+
+
+### Bug Fixes
+
+* upgrade semantic-release from 17.2.0 to 17.2.1 ([54535e1](https://github.com/randytarampi/pseudoimage/commit/54535e15297ad461cfe39dcfedd3951bf9c568fc))
+* upgrade snyk from 1.406.0 to 1.414.1 ([05a3dd8](https://github.com/randytarampi/pseudoimage/commit/05a3dd846899214e719dec4acd0ddbb159a949b9))
+
 ## [3.1.15](https://github.com/randytarampi/pseudoimage/compare/v3.1.14...v3.1.15) (2020-10-18)
 
 
