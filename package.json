@@ -10,7 +10,7 @@
   "bugs": "https://github.com/randytarampi/pseudoimage/issues",
   "dependencies": {
     "@randy.tarampi/lwip": "^2.0.2",
-    "commander": "^6.1.0",
+    "commander": "^6.2.0",
     "mkdirp": "^1.0.4",
     "snyk": "^1.416.0"
   },
