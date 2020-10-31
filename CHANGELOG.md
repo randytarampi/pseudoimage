@@ -1,3 +1,13 @@
+## [3.1.19](https://github.com/randytarampi/pseudoimage/compare/v3.1.18...v3.1.19) (2020-10-31)
+
+
+### Bug Fixes
+
+* upgrade commander from 6.1.0 to 6.2.0 ([187ba25](https://github.com/randytarampi/pseudoimage/commit/187ba25710349184b2f48e87f89996c9f7f6e13c))
+* upgrade semantic-release from 17.2.1 to 17.2.2 ([0cbe72e](https://github.com/randytarampi/pseudoimage/commit/0cbe72e8e7340eab13e9eab8612e2d93270a03c5))
+* upgrade sinon from 9.2.0 to 9.2.1 ([8dd3d42](https://github.com/randytarampi/pseudoimage/commit/8dd3d4256eaa278933016b1d4d54703960ce8dcc))
+* upgrade snyk from 1.416.0 to 1.419.0 ([776690b](https://github.com/randytarampi/pseudoimage/commit/776690ba9778b6dd8779c05b4094dd922596251c))
+
 ## [3.1.18](https://github.com/randytarampi/pseudoimage/compare/v3.1.17...v3.1.18) (2020-10-21)
 
 
