@@ -11,9 +11,9 @@ matrix:
   - node_js: lts/*
   - os: windows
 node_js:
-- 8
 - 10
 - 12
+- 14
 - lts/*
 - node
 addons:
