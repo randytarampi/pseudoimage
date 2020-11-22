@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/randytarampi/pseudoimage/compare/v3.1.19...v4.0.0) (2020-11-22)
+
+
+### chore
+
+* **package:** Upgrade packages for 2020-11-22. ([e2eedc7](https://github.com/randytarampi/pseudoimage/commit/e2eedc76c8cf971cf75432773eba1222d69cc11f))
+
+
+### BREAKING CHANGES
+
+* **package:** Drop support for node<9.
+
 ## [3.1.19](https://github.com/randytarampi/pseudoimage/compare/v3.1.18...v3.1.19) (2020-10-31)
 
 
