@@ -12,7 +12,7 @@
     "@randy.tarampi/lwip": "^3.0.17",
     "commander": "^6.2.1",
     "mkdirp": "^1.0.4",
-    "snyk": "^1.667.0"
+    "snyk": "^1.675.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
