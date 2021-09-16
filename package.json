@@ -24,7 +24,7 @@
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-if": "^3.0.0",
-    "gulp-mocha": "^7.0.2",
+    "gulp-mocha": "^8.0.0",
     "mocha": "^8.4.0",
     "mocha-junit-reporter": "^2.0.0",
     "nyc": "^15.1.0",
