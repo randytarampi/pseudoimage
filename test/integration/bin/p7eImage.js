@@ -15,7 +15,7 @@ describe("p7eImage", function () {
                 try {
                     expect(error).to.be.ok;
                     expect(stdout).to.eql("");
-                    expect(stderr).to.match(/Please supply a sourceImagePath/);
+                    expect(stderr).to.match(/error: missing required argument 'sourceImagePath'/);
                     resolve();
                 } catch (expectationError) {
                     reject(expectationError);
@@ -124,7 +124,7 @@ describe("p7eImage", function () {
                     try {
                         expect(error).to.be.ok;
                         expect(stdout).to.eql("");
-                        expect(stderr).to.match(/Please specify a proper preset/);
+                        expect(stderr).to.match(/error: option '-p --preset <preset>' argument 'foo' is invalid. Allowed choices are retina, half./);
                         resolve();
                     } catch (expectationError) {
                         reject(expectationError);

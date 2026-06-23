@@ -19,8 +19,9 @@ describe("pseudoimage", function () {
     afterEach(function () {
         try {
             rmrf(tmpDir);
-        } catch (e) { // eslint-disable-line no-empty
-        } // eslint-disable-line no-empty
+        } catch {
+            // ignore errors removing the temp directory
+        }
     });
 
     describe("generatePseudoImage", function () {
