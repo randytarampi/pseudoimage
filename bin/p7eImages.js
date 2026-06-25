@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
-const path = require("path");
-const {program: commander, Option} = require("commander");
-const Pseudoimage = require("../lib/pseudoimage");
-const packageJson = require("../package.json");
+import path from "node:path";
+import {readFileSync} from "node:fs";
+import {program as commander, Option} from "commander";
+import Pseudoimage from "../lib/pseudoimage.js";
+
+const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
 
 commander
     .version(packageJson.version)
