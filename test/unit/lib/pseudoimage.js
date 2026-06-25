@@ -1,8 +1,12 @@
-const path = require("path");
-const sinon = require("sinon");
-const expect = require("chai").expect;
-const lwip = require("@randy.tarampi/lwip");
-const Pseudoimage = require("../../../lib/pseudoimage");
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import sinon from "sinon";
+import {expect} from "chai";
+import lwip from "@randy.tarampi/lwip";
+import Pseudoimage from "../../../lib/pseudoimage.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 describe("pseudoimage", function () {
     this.timeout(60000);
