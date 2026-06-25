@@ -76,8 +76,10 @@
   },
   "repository": "randytarampi/pseudoimage.git",
   "scripts": {
+    "clean": "rm -rf node_modules dist .nyc_output coverage",
     "cover": "cross-env-shell NODE_ENV=test nyc gulp -LLLL --color test",
     "coveralls": "cat coverage/lcov.info | coveralls",
+    "lint": "eslint .",
     "pretest": "gulp -LLLL --color lint",
     "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test"
   },
