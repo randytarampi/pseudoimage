@@ -1,8 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const {expect} = require("chai");
-const childProcess = require("child_process");
-const {rm} = require("../../util");
+import fs from "node:fs";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import {expect} from "chai";
+import childProcess from "node:child_process";
+import {rm} from "../../util/index.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 describe("p7eImage", function () {
     this.timeout(60000);

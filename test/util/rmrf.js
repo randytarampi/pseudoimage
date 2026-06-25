@@ -1,6 +1,6 @@
-const path = require("path");
-const fs = require("fs");
-const rm = require("./rm");
+import path from "node:path";
+import fs from "node:fs";
+import rm from "./rm.js";
 
 const rmrf = dir => {
     try {
@@ -25,4 +25,4 @@ const rmrf = dir => {
     }
 };
 
-module.exports = rmrf;
+export default rmrf;

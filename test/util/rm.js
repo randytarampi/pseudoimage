@@ -1,7 +1,7 @@
-const fs = require("fs");
+import fs from "node:fs";
 
 const rm = filename => {
     fs.unlinkSync(filename);
 };
 
-module.exports = rm;
+export default rm;

@@ -1,4 +1,4 @@
-const lwip = require("@randy.tarampi/lwip");
+import lwip from "@randy.tarampi/lwip";
 
 const openImage = imagePath => {
     return new Promise((resolve, reject) => {
@@ -12,6 +12,4 @@ const openImage = imagePath => {
     });
 };
 
-module.exports = openImage;
-
-
+export default openImage;
