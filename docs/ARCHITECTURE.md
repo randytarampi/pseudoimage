@@ -1,11 +1,11 @@
 # Architecture
 
-`pseudoimage` is a single-package CLI/library.
+`pseudoimage` is a single-package CLI/library for building image folders from pseudolocales.
 
 ## Layout
-- `bin/` holds the command entrypoints (`p7eImage.js`, `p7eImages.js`).
-- `lib/pseudoimage.js` is the library entry point.
-- `test/` contains the Mocha suite.
+- `bin/` holds the CLI entrypoints exposed by npm.
+- `lib/pseudoimage.js` is the public library entry point.
+- `test/unit` covers the library helpers; `test/integration` covers the CLI and filesystem behavior.
 - Published output is limited to `bin/`, `lib/`, and `npm-shrinkwrap.json`.
 
 ## Dependency shape
