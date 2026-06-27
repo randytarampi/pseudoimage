@@ -6,10 +6,25 @@
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudoimage.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![CI](https://github.com/randytarampi/pseudoimage/actions/workflows/ci.yml/badge.svg)](https://github.com/randytarampi/pseudoimage/actions/workflows/ci.yml)
-[![Analytics](https://ga-beacon.appspot.com/UA-50921068-1/beacon/github/randytarampi/me/tree/master/packages/pseudoimage?flat&useReferrer)](https://github.com/igrigorik/ga-beacon)
 
 
 [![Install @randy.tarampi/pseudoimage](https://nodeico.herokuapp.com/@randy.tarampi/pseudoimage.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
+
+## Dependencies
+
+```bash
+brew install nvm
+nvm install 24
+corepack enable
+```
+
+This repo resolves `@randy.tarampi/lwip` through `portal:../lwip`, so keep the `lwip` repo checked out next door for local dev.
+
+## Installation
+
+```bash
+yarn install
+```
 
 This uses [@randy.tarampi/lwip](https://github.com/randytarampi/lwip) to modify your images to create a fake, which gets saved somewhere.
 
