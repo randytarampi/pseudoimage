@@ -1,18 +1,18 @@
 # AGENTS.md
 
-`pseudoimage` is a small CLI/library package that turns pseudolocales into image-folder helpers. It is a single-package project with a thin binary wrapper over the library code.
+`pseudoimage` is a pseudolocal image-generation library for test fixtures. It is ESM on Node 24 with Yarn 4.17, Gulp 5, Mocha, and ESLint v9 (not v10; the peer-dep pin matters).
 
 Canonical commands:
 - `yarn test`
+- `yarn lint`
+- `yarn clean`
 - `yarn cover`
 
-Details:
-- [Architecture](docs/ARCHITECTURE.md)
-- [Conventions](docs/CONVENTIONS.md)
-- [Limitations](docs/LIMITATIONS.md)
+Notes:
+- `@randy.tarampi/lwip` is a portal link to the sibling `lwip` repo, so local changes there are picked up live.
 
 ## How to add/enrich/update guidance in this repo
-- Keep this file brief; add detail only in the focused docs.
-- Update `ARCHITECTURE.md` when the CLI, library surface, or published files change.
-- Update `CONVENTIONS.md` when Node, module format, linting, or release rules change.
-- Keep `LIMITATIONS.md` for unresolved issues only.
+- Keep this file short and put implementation detail in `docs/*`.
+- Update `docs/ARCHITECTURE.md` when the CLI surface, library layout, or published files change.
+- Update `docs/CONVENTIONS.md` when Node, linting, or release rules change.
+- Keep `docs/LIMITATIONS.md` for unresolved issues only.
