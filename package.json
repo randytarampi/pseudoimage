@@ -27,6 +27,9 @@
     "gulp-eslint-new": "^2.6.2",
     "gulp-if": "^3.0.0",
     "gulp-mocha": "^10.0.1",
+    "husky": "^9.1.7",
+    "knip": "^6.22.0",
+    "lint-staged": "^17.0.8",
     "mocha": "^11.7.6",
     "mocha-junit-reporter": "^2.2.1",
     "node-gyp": "^13.0.0",
@@ -78,10 +81,12 @@
   "scripts": {
     "clean": "rm -rf node_modules dist .nyc_output coverage",
     "cover": "cross-env-shell NODE_ENV=test nyc gulp -LLLL --color test",
+    "knip": "knip",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "pretest": "gulp -LLLL --color lint",
-    "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test"
+    "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test",
+    "prepare": "husky"
   },
   "sideEffects": false,
   "packageManager": "yarn@4.17.0"
