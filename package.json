@@ -75,7 +75,8 @@
   "type": "module",
   "main": "lib/pseudoimage.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "repository": "randytarampi/pseudoimage.git",
   "scripts": {
