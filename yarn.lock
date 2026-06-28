@@ -1262,7 +1262,6 @@ __metadata:
     mkdirp: "npm:^3.0.1"
     mocha: "npm:^11.7.6"
     mocha-junit-reporter: "npm:^2.2.1"
-    node-gyp: "npm:^13.0.0"
     nyc: "npm:^18.0.0"
     semantic-release: "npm:^25.0.5"
     sinon: "npm:^22.0.0"
@@ -6711,7 +6710,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^13.0.0, node-gyp@npm:latest":
+"node-gyp@npm:latest":
   version: 13.0.0
   resolution: "node-gyp@npm:13.0.0"
   dependencies:
