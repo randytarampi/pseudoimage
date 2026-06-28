@@ -16,8 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Checkout sibling lwip repo
-        run: git clone --depth 1 https://x-access-token:${{ github.token }}@github.com/randytarampi/lwip.git ../lwip
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
