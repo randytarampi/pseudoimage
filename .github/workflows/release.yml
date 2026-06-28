@@ -24,6 +24,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Checkout sibling lwip repo
+        run: git clone --depth 1 https://x-access-token:${{ github.token }}@github.com/randytarampi/lwip.git ../lwip
+
       - name: Setup Node.js 24
         uses: actions/setup-node@v4
         with:
