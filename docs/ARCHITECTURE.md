@@ -11,3 +11,7 @@
 ## Dependency shape
 - The package depends on `@randy.tarampi/lwip` for image manipulation.
 - `commander` powers the CLI surface and `mkdirp` handles folder creation.
+
+## CI/CD Pipeline
+- `.github/workflows/ci.yml` runs tests on PRs on Node 24.
+- `.github/workflows/release.yml` does master-branch semantic-release with OIDC trusted publishing.
