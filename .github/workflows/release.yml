@@ -38,6 +38,8 @@ jobs:
         run: corepack enable
 
       - name: Install dependencies
+        env:
+          YARN_ENABLE_HARDENED_MODE: false
         run: yarn install
 
       - name: Run semantic-release
