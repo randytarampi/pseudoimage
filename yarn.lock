@@ -1230,16 +1230,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@randy.tarampi/lwip@npm:^3.0.20":
-  version: 3.0.20
-  resolution: "@randy.tarampi/lwip@npm:3.0.20"
+"@randy.tarampi/lwip@npm:^3.0.22":
+  version: 3.0.22
+  resolution: "@randy.tarampi/lwip@npm:3.0.22"
   dependencies:
     async: "npm:^3.2.6"
     bindings: "npm:^1.5.0"
     decree: "npm:^0.0.6"
     nan: "npm:^2.27.0"
     node-gyp: "npm:^13.0.0"
-  checksum: 10c0/aa79fa4d1a4bba51db16c20d94c73fe0069fc48c5a5fed9da91b12c24efed6fb44998a768e28c61b07f7a89d5b396d28ec7b5c5ad3c4e5c1ef40d4c9155234ce
+  checksum: 10c0/33025540ac45d3085d4713887fd43ea03850305fb9224dcfbcbd66aaa53cc49bbecc8a268f45905e408cb98b0b030952c8b5c30a76b5a2c36bffdd0c697eb219
   languageName: node
   linkType: hard
 
@@ -1248,7 +1248,7 @@ __metadata:
   resolution: "@randy.tarampi/pseudoimage@workspace:."
   dependencies:
     "@eslint/js": "npm:^9"
-    "@randy.tarampi/lwip": "npm:^3.0.20"
+    "@randy.tarampi/lwip": "npm:^3.0.22"
     "@semantic-release/changelog": "npm:^6.0.3"
     "@semantic-release/git": "npm:^10.0.1"
     c8: "npm:^12.0.0"
