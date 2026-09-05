@@ -85,6 +85,7 @@
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "verify": "yarn lint && yarn test",
+    "verify:ci": "yarn install --immutable && yarn lint && yarn test && yarn cover && test -s coverage/lcov.info",
     "pretest": "gulp -LLLL --color lint",
     "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test",
     "prepare": "husky"

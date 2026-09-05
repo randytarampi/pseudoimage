@@ -26,6 +26,10 @@ This repo resolves `@randy.tarampi/lwip` through `portal:../lwip`, so keep the `
 yarn install
 ```
 
+## Verification
+
+Run the complete CI sequence locally with `yarn verify:ci`.
+
 This uses [@randy.tarampi/lwip](https://github.com/randytarampi/lwip) to modify your images to create a fake, which gets saved somewhere.
 
 ## Usage
