@@ -31,6 +31,7 @@ jobs:
           cache: yarn
           cache-dependency-path: yarn.lock
       - run: corepack enable
+        shell: bash
       - name: Cache Yarn
         uses: actions/cache@v6
         with:
@@ -44,8 +45,10 @@ jobs:
         env:
           YARN_ENABLE_HARDENED_MODE: false
         run: yarn install --immutable --network-timeout 600000
+        shell: bash
       - name: Verify
         run: yarn verify
+        shell: bash
       - name: Generate coverage
         if: runner.os == 'Linux'
         run: yarn cover
