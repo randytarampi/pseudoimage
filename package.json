@@ -80,7 +80,7 @@
   "repository": "randytarampi/pseudoimage.git",
   "scripts": {
     "clean": "rm -rf node_modules dist .nyc_output coverage",
-    "cover": "cross-env-shell NODE_ENV=test nyc gulp -LLLL --color test",
+    "cover": "cross-env-shell NODE_ENV=test nyc --reporter=lcov --reporter=text gulp -LLLL --color test",
     "knip": "knip",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
