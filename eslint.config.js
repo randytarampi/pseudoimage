@@ -36,7 +36,7 @@ export default [
         },
         settings: {
             // Sinon 22's published ESM bundle uses syntax eslint-plugin-import cannot parse.
-            "import/ignore": ["node_modules/sinon/.*"],
+            "import/ignore": ["node_modules[/\\\\]sinon[/\\\\].*"],
             "import/resolver": {
                 node: {
                     extensions: [".js", ".json"]
