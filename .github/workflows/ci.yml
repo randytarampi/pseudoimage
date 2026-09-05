@@ -13,14 +13,21 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [24]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      GYP_MSVS_VERSION: ${{ matrix.os == 'windows-latest' && '2022' || '' }}
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
-          node-version: 24
+          node-version: ${{ matrix.node-version }}
           cache: yarn
           cache-dependency-path: yarn.lock
       - run: corepack enable
@@ -36,57 +43,23 @@ jobs:
       - name: Install dependencies
         env:
           YARN_ENABLE_HARDENED_MODE: false
-        run: yarn install --immutable
-      - name: Lint
-        run: yarn lint
-      - name: Test
-        run: yarn test
+        run: yarn install --immutable --network-timeout 600000
+      - name: Verify
+        run: yarn verify
       - name: Generate coverage
+        if: runner.os == 'Linux'
         run: yarn cover
       - name: Upload coverage to Coveralls
+        if: runner.os == 'Linux'
         uses: coverallsapp/github-action@v2
         with:
           file: coverage/lcov.info
       - name: Upload coverage to Qlty
+        if: runner.os == 'Linux'
         uses: qltysh/qlty-action/coverage@v2
         with:
           oidc: true
           files: coverage/lcov.info
-
-  windows:
-    runs-on: windows-latest
-    env:
-      GYP_MSVS_VERSION: 2022
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: yarn
-          cache-dependency-path: yarn.lock
-      - run: corepack enable
-      - name: Install dependencies
-        env:
-          YARN_ENABLE_HARDENED_MODE: false
-        run: yarn install --immutable --network-timeout 600000
-      - run: yarn verify
-
-  macos:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: yarn
-          cache-dependency-path: yarn.lock
-      - run: corepack enable
-      - name: Install dependencies
-        env:
-          YARN_ENABLE_HARDENED_MODE: false
-        run: yarn install --immutable --network-timeout 600000
-      - run: yarn verify
-
 
   appveyor:
     if: ${{ github.event_name == 'push' }}
