@@ -17,6 +17,7 @@
     "@eslint/js": "^9",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "c8": "^12.0.0",
     "chai": "^6.2.2",
     "coveralls": "^3.1.1",
     "cross-env": "^10.1.0",
@@ -80,7 +81,7 @@
   "repository": "randytarampi/pseudoimage.git",
   "scripts": {
     "clean": "rm -rf node_modules dist .nyc_output coverage",
-    "cover": "cross-env-shell NODE_ENV=test nyc --reporter=lcov --reporter=text gulp -LLLL --color test",
+    "cover": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text --check-coverage --lines=90 --functions=90 --branches=90 --statements=90 --exclude='test/**' --exclude='*.config.js' --exclude='gulpfile.js' gulp -LLLL --color test",
     "knip": "knip",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
