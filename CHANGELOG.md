@@ -1,3 +1,12 @@
+## [4.0.2](https://github.com/randytarampi/pseudoimage/compare/v4.0.1...v4.0.2) (2026-09-05)
+
+
+### Bug Fixes
+
+* **ci:** configure Windows native build ([2284744](https://github.com/randytarampi/pseudoimage/commit/2284744ce28d11df22387869c3b89960c88fca67))
+* **ci:** restore coverage measurement broken by the qlty upload change ([cb70119](https://github.com/randytarampi/pseudoimage/commit/cb70119bce6dd2d2d41d58bf2454bdb2e7523199))
+* **release:** trigger only after successful ci ([124b846](https://github.com/randytarampi/pseudoimage/commit/124b8460283165cd0468a0432eb40c9e479f2407))
+
 ## [4.0.1](https://github.com/randytarampi/pseudoimage/compare/v4.0.0...v4.0.1) (2026-09-05)
 
 
