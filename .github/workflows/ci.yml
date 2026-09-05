@@ -1,6 +1,8 @@
 name: CI
 on:
   push:
+    branches:
+      - main
   pull_request:
 
 concurrency:
@@ -9,10 +11,6 @@ concurrency:
 
 jobs:
   node:
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version: [20, 22, 24, 26]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -20,8 +18,9 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 24
           cache: yarn
+          cache-dependency-path: yarn.lock
       - run: corepack enable
       - name: Cache Yarn
         uses: actions/cache@v6
@@ -35,9 +34,11 @@ jobs:
       - name: Install dependencies
         env:
           YARN_ENABLE_HARDENED_MODE: false
-        run: yarn install
-      - name: Verify
-        run: yarn verify
+        run: yarn install --immutable
+      - name: Lint
+        run: yarn lint
+      - name: Test
+        run: yarn test
       - name: Generate coverage
         run: yarn cover
       - name: Upload coverage to Coveralls
