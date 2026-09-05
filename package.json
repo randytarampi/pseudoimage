@@ -88,7 +88,7 @@
     "verify": "yarn lint && yarn test",
     "verify:ci": "yarn install --immutable && yarn lint && yarn test && yarn cover && test -s coverage/lcov.info",
     "pretest": "node node_modules/gulp/bin/gulp.js -LLLL --color lint",
-    "test": "cross-env-shell NODE_ENV=test node node_modules/gulp/bin/gulp.js -LLLL --color test",
+    "test": "cross-env NODE_ENV=test node node_modules/gulp/bin/gulp.js -LLLL --color test",
     "prepare": "husky"
   },
   "sideEffects": false,
