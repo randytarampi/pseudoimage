@@ -81,14 +81,14 @@
   "repository": "randytarampi/pseudoimage.git",
   "scripts": {
     "clean": "rm -rf node_modules dist .nyc_output coverage",
-    "cover": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text --check-coverage --lines=90 --functions=90 --branches=90 --statements=90 --exclude='test/**' --exclude='*.config.js' --exclude='gulpfile.js' gulp -LLLL --color test",
+    "cover": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text --check-coverage --lines=90 --functions=90 --branches=90 --statements=90 --exclude='test/**' --exclude='*.config.js' --exclude='gulpfile.js' node node_modules/gulp/bin/gulp.js -LLLL --color test",
     "knip": "knip",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "verify": "yarn lint && yarn test",
     "verify:ci": "yarn install --immutable && yarn lint && yarn test && yarn cover && test -s coverage/lcov.info",
-    "pretest": "gulp -LLLL --color lint",
-    "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test",
+    "pretest": "node node_modules/gulp/bin/gulp.js -LLLL --color lint",
+    "test": "cross-env-shell NODE_ENV=test node node_modules/gulp/bin/gulp.js -LLLL --color test",
     "prepare": "husky"
   },
   "sideEffects": false,
