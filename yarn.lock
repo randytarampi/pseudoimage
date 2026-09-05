@@ -1230,7 +1230,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@randy.tarampi/lwip@npm:^3.0.20":
+"@randy.tarampi/lwip@npm:^3.0.23":
   version: 3.0.23
   resolution: "@randy.tarampi/lwip@npm:3.0.23"
   dependencies:
@@ -1248,7 +1248,7 @@ __metadata:
   resolution: "@randy.tarampi/pseudoimage@workspace:."
   dependencies:
     "@eslint/js": "npm:^9"
-    "@randy.tarampi/lwip": "npm:^3.0.20"
+    "@randy.tarampi/lwip": "npm:^3.0.23"
     "@semantic-release/changelog": "npm:^6.0.3"
     "@semantic-release/git": "npm:^10.0.1"
     c8: "npm:^12.0.0"
