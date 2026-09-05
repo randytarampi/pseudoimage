@@ -5,7 +5,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@randy.tarampi/pseudoimage.svg?style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
 [![npm license](https://img.shields.io/npm/l/@randy.tarampi/pseudoimage.svg?registry_uri=https%3A%2F%2Fregistry.npmjs.com&style=flat-square)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
-[![CI](https://github.com/randytarampi/pseudoimage/actions/workflows/ci.yml/badge.svg)](https://github.com/randytarampi/pseudoimage/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/randytarampi/pseudoimage/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/randytarampi/pseudoimage/actions/workflows/ci.yml) [![CodeQL](https://img.shields.io/github/actions/workflow/status/randytarampi/pseudoimage/codeql.yml?branch=main&style=flat-square&label=CodeQL)](https://github.com/randytarampi/pseudoimage/security/code-scanning)
 
 
 [![Install @randy.tarampi/pseudoimage](https://nodeico.herokuapp.com/@randy.tarampi/pseudoimage.svg)](https://www.npmjs.com/package/@randy.tarampi/pseudoimage)
