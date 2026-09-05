@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/randytarampi/pseudoimage/compare/v4.0.2...v4.0.3) (2026-09-05)
+
+
+### Bug Fixes
+
+* **ci:** use available Node 24 image package ([35d96cb](https://github.com/randytarampi/pseudoimage/commit/35d96cb51fe22d9e3066c0f4b56bea761e0d2eeb))
+
 ## [4.0.2](https://github.com/randytarampi/pseudoimage/compare/v4.0.1...v4.0.2) (2026-09-05)
 
 
