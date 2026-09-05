@@ -84,6 +84,7 @@
     "knip": "knip",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint .",
+    "verify": "yarn lint && yarn test",
     "pretest": "gulp -LLLL --color lint",
     "test": "cross-env-shell NODE_ENV=test gulp -LLLL --color test",
     "prepare": "husky"
