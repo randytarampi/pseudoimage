@@ -2,8 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {expect} from "chai";
-import childProcess from "node:child_process";
-import {rmrf} from "../../util/index.js";
+import {execFile, rmrf} from "../../util/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,7 +14,7 @@ describe("p7eImages", function () {
         const stubArguments = [];
 
         return new Promise((resolve, reject) => {
-            childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+            execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                 try {
                     expect(error).to.be.ok;
                     expect(stdout).to.eql("");
@@ -35,7 +34,7 @@ describe("p7eImages", function () {
         ];
 
         return new Promise((resolve, reject) => {
-            childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+            execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                 try {
                     expect(error).to.be.ok;
                     expect(stdout).to.eql("");
@@ -56,7 +55,7 @@ describe("p7eImages", function () {
         const expectedDestinationDirectory = `${sourceDirectory}-pseudoimages`;
 
         return new Promise((resolve, reject) => {
-            childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+            execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                 try {
                     expect(error).to.eql(null);
                     expect(stdout).to.eql("");
@@ -80,7 +79,7 @@ describe("p7eImages", function () {
         ];
 
         return new Promise((resolve, reject) => {
-            childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+            execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                 try {
                     expect(error).to.eql(null);
                     expect(stdout).to.eql("");
@@ -104,7 +103,7 @@ describe("p7eImages", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+                execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.be.ok;
                         expect(stdout).to.eql("");
@@ -127,7 +126,7 @@ describe("p7eImages", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+                execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.eql(null);
                         expect(stdout).to.eql("");
@@ -150,7 +149,7 @@ describe("p7eImages", function () {
             ];
 
             return new Promise((resolve, reject) => {
-                childProcess.execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
+                execFile(path.join(__dirname, "../../../bin/p7eImages.js"), stubArguments, (error, stdout, stderr) => {
                     try {
                         expect(error).to.eql(null);
                         expect(stdout).to.eql("");
