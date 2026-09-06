@@ -49,7 +49,8 @@ describe("pseudoimage", function () {
         });
 
         it("should return a rejected promise we can't traverse the destination directory", function () {
-            const pseudoimage = new Pseudoimage(resourceDir, "/dev/urandom", testImageTransformationFunction);
+            const destinationDirectory = path.join(resourceDir, "subdirectory", "photo-1450684739805-ccc25cf4d388.jpeg", "child");
+            const pseudoimage = new Pseudoimage(resourceDir, destinationDirectory, testImageTransformationFunction);
             return pseudoimage.generatePseudoImages()
                 .then(() => {
                     throw new Error("This should've exploded");

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import path from "node:path";
 import {readFileSync} from "node:fs";
 import {program as commander, Option} from "commander";
 import Pseudoimage from "../lib/pseudoimage.js";
@@ -16,7 +15,7 @@ commander
     .argument("[destinationDirectory]", "Destination directory")
     .action((sourceDirectory, destinationDirectory, options) => {
         if (!destinationDirectory) {
-            destinationDirectory = path.join(path.sep, `${sourceDirectory.split(path.sep).filter(component => !!component).join(path.sep)}-pseudoimages`);
+            destinationDirectory = `${sourceDirectory}-pseudoimages`;
         }
 
         let pseudoimage;
